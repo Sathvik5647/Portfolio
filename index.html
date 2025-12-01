@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathvik Merugu - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Sathvik Merugu</h1>
+            <p class="nav-tagline">Data Science・Developer・Competitive Coding</p>
+        </div>
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('home')">Home</button>
+            <button class="tab-btn" onclick="switchTab('about')">About</button>
+            <button class="tab-btn" onclick="switchTab('skills')">Skills</button>
+            <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
+            <button class="tab-btn" onclick="switchTab('certifications')">Certifications</button>
+            <button class="tab-btn" onclick="switchTab('competitive')">Competitive Coding</button>
+        </div>
+    </nav>
+
+    <!-- Content Sections -->
+    <main>
+        <!-- Home Tab -->
+        <div id="home" class="tab-content active">
+            <div class="home-container">
+                <div class="home-photo">
+                    <img src="profile.jpg" alt="Sathvik Merugu" />
+                </div>
+                <div class="home-content">
+                    <h1 class="home-title">Hi, I'm <span class="highlight typewriter" id="nameTypewriter"></span></h1>
+                    <p class="home-subtitle"><span class="typewriter" id="subtitleTypewriter"></span></p>
+                    <div class="skills-bubbles" id="skillsBubbles" style="display: none;">
+                        <span class="bubble">Python FullStack</span>
+                        <span class="bubble">MERN Stack</span>
+                        <span class="bubble">Data Science</span>
+                        <span class="bubble">Machine Learning</span>
+                        <span class="bubble">Competitive Coding</span>
+                    </div>
+                    <div class="home-location" id="homeLocation" style="display: none;">
+                        <span>📍 Vadodara, Gujarat</span>
+                        <span>|</span>
+                        <a href="mailto:sathviksahithi@gmail.com">📧 sathviksahithi@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Tab -->
+        <div id="about" class="tab-content">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>I'm a 3rd-year Computer Science student at Parul University, specializing in Artificial Intelligence, with an expected graduation in 2027. My passion lies in research and discovering new technologies</p>
+                <p style="margin-top: 15px;">Currently, I'm proficient in Python for ML and Data Science, Java for competitive coding, and full-stack development with the MERN stack. I'm actively learning Machine Learning and aspire to delve into Quantum Computing in the future. I believe in continuous learning and pushing the boundaries of what's possible with technology.</p>
+                <p style="margin-top: 15px;">Beyond coding, I'm fascinated by the cosmos and enjoy exploring how computational methods can help us understand the universe better. My goal is to contribute meaningfully to the field of AI and potentially bridge it with quantum computing research.</p>
+            </div>
+        </div>
+
+        <!-- Skills Tab -->
+        <div id="skills" class="tab-content">
+            <div class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">Python (Advanced - ML, Data Science, Flask)</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">Java (Competitive Programming)</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon">C (Proficient)</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="skill-icon">Flask & Django</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-icon">React & Node.js</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="skill-icon">Express & MongoDB</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="skill-icon">Matplotlib, NumPy, Pandas</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="SQLAlchemy" class="skill-icon">Flask-SQLAlchemy, Werkzeug</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">Servlet, Maven, JDBC</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI/ML (Learning)</h3>
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" class="skill-icon">Scikit-learn</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" class="skill-icon">PyTorch</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" class="skill-icon">TensorFlow</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" class="skill-icon">OpenCV</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">Git & GitHub</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="skill-icon">VS Code & Cursor</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-icon">GitHub Copilot</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" class="skill-icon">Postman</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">MySQL & MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Tab -->
+        <div id="projects" class="tab-content">
+            <div class="section">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <img src="safequest/1.jpeg" alt="SafeQuest Screenshot 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="safequest/Screenshot (169).png" alt="SafeQuest Screenshot 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="safequest/Screenshot (170).png" alt="SafeQuest Screenshot 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="safequest/Screenshot (171).png" alt="SafeQuest Screenshot 4">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="safequest/Screenshot (172).png" alt="SafeQuest Screenshot 5">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="safequest/Screenshot (173).png" alt="SafeQuest Screenshot 6">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="safequest/Screenshot (174).png" alt="SafeQuest Screenshot 7">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="safequest/Screenshot (175).png" alt="SafeQuest Screenshot 8">
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="moveSlide(this, -1)">‹</button>
+                            <button class="carousel-btn next" onclick="moveSlide(this, 1)">›</button>
+                            <div class="carousel-dots"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>SafeQuest</h3>
+                            <div class="tech-badges">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">AI/ML</span>
+                            </div>
+                            <p>Full-stack MERN application with AI-powered story generation, real-time text-to-speech narration, and HuggingFace image generation. Features dynamic character animations, JWT/Google OAuth authentication, and community blog.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Sathvik5647/Safequest" target="_blank">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <img src="learning_platform/Screenshot (183).png" alt="Learning Platform Screenshot 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="learning_platform/Screenshot (184).png" alt="Learning Platform Screenshot 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="learning_platform/Screenshot (185).png" alt="Learning Platform Screenshot 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="learning_platform/Screenshot (186).png" alt="Learning Platform Screenshot 4">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="learning_platform/Screenshot (187).png" alt="Learning Platform Screenshot 5">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="learning_platform/Screenshot (188).png" alt="Learning Platform Screenshot 6">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="learning_platform/Screenshot (189).png" alt="Learning Platform Screenshot 7">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="learning_platform/Screenshot (190).png" alt="Learning Platform Screenshot 8">
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="moveSlide(this, -1)">‹</button>
+                            <button class="carousel-btn next" onclick="moveSlide(this, 1)">›</button>
+                            <div class="carousel-dots"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Learning Platform</h3>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">SQLAlchemy</span>
+                                <span class="tech-badge">Werkzeug</span>
+                                <span class="tech-badge">Python</span>
+                            </div>
+                            <p>Dynamic platform gamifying the learning process with interactive quizzes, personalized adaptive learning, point-based system, and achievement badges for continuous engagement.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Sathvik5647/Learning-Platform" target="_blank">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <img src="studytracker/Screenshot (192).png" alt="Study Tracker Screenshot 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (193).png" alt="Study Tracker Screenshot 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (194).png" alt="Study Tracker Screenshot 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (195).png" alt="Study Tracker Screenshot 4">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (196).png" alt="Study Tracker Screenshot 5">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (197).png" alt="Study Tracker Screenshot 6">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (198).png" alt="Study Tracker Screenshot 7">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (199).png" alt="Study Tracker Screenshot 8">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (200).png" alt="Study Tracker Screenshot 9">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (201).png" alt="Study Tracker Screenshot 10">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="studytracker/Screenshot (202).png" alt="Study Tracker Screenshot 11">
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="moveSlide(this, -1)">‹</button>
+                            <button class="carousel-btn next" onclick="moveSlide(this, 1)">›</button>
+                            <div class="carousel-dots"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Student Grade Analysis System</h3>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">SQLAlchemy</span>
+                                <span class="tech-badge">Matplotlib</span>
+                                <span class="tech-badge">Seaborn</span>
+                            </div>
+                            <p>Student Performance Analyzer is a full-featured academic management system that streamlines the way educational institutions handle student data, performance tracking, and analytics</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Sathvik5647/Learning-Platform" target="_blank">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Tab -->
+        <div id="certifications" class="tab-content">
+            <div class="section">
+                <h2>Certifications & Achievements</h2>
+                <div class="cert-grid">
+                    <div class="cert-card" onclick="openCertModal('certificates/IBMDesign20250906-30-hdsbsa_page-0001.jpg', 'AI Fundamentals', 'IBM via Cisco Networking Academy')">
+                        <div class="cert-image">
+                            <img src="certificates/IBMDesign20250906-30-hdsbsa_page-0001.jpg" alt="AI Fundamentals Certificate" loading="eager">
+                        </div>
+                        <h4>AI Fundamentals</h4>
+                        <p>IBM via Cisco Networking Academy</p>
+                    </div>
+                    <div class="cert-card" onclick="openCertModal('certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250901-30-6hktw0_page-0001 (1).jpg', 'AWS Cloud Foundations', 'AWS Academy')">
+                        <div class="cert-image">
+                            <img src="certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250901-30-6hktw0_page-0001 (1).jpg" alt="AWS Cloud Foundations Certificate" loading="eager">
+                        </div>
+                        <h4>AWS Cloud Foundations</h4>
+                        <p>AWS Academy</p>
+                    </div>
+                    <div class="cert-card" onclick="openCertModal('certificates/Computer Networks And Internet Protocol (1)_page-0001 (1).jpg', 'Computer Networks (Elite)', 'NPTEL')">
+                        <div class="cert-image">
+                            <img src="certificates/Computer Networks And Internet Protocol (1)_page-0001 (1).jpg" alt="Computer Networks Certificate" loading="eager">
+                        </div>
+                        <h4>Computer Networks (Elite)</h4>
+                        <p>NPTEL</p>
+                    </div>
+                    <div class="cert-card" onclick="openCertModal('certificates/Data_Science_Course_Certificate_page-0001.jpg', 'Data Science Course', 'CodeWithHarry')">
+                        <div class="cert-image">
+                            <img src="certificates/Data_Science_Course_Certificate_page-0001.jpg" alt="Data Science Course Certificate" loading="eager">
+                        </div>
+                        <h4>Data Science Course</h4>
+                        <p>CodeWithHarry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competitive Coding Tab -->
+        <div id="competitive" class="tab-content">
+            <div class="section">
+                <h2>Competitive Coding</h2>
+                <p style="text-align: center; margin-bottom: 30px;">Actively practicing problem-solving and algorithmic challenges on various platforms.</p>
+                <div class="competitive-platforms">
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" fill="#FFA116"/>
+                            </svg>
+                        </div>
+                        <h3>LeetCode</h3>
+                        <div class="badge-container" onclick="openBadgeModal(event, '50_days_badge.png', 'LeetCode 50 Active Days Badge')">
+                            <img src="50_days_badge.png" alt="50 Days Badge" class="achievement-badge">
+                            <p class="achievement">50 Active Days Badge <span class="tap-hint">👆 Tap to view</span></p>
+                        </div>
+                        <p>Solving problems regularly with focus on Data Structures and Algorithms</p>
+                        <a href="https://leetcode.com/u/Sathvik_Merugu/" target="_blank" class="platform-link">Visit Profile →</a>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.45 14.315c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.016 3.79 3.79 0 0 1-2.135-2.078 3.571 3.571 0 0 1-.13-.353h7.418a4.26 4.26 0 0 1-.368 1.008zm-11.99-.654a3.793 3.793 0 0 1-2.134 2.078 4.51 4.51 0 0 1-3.117.016 3.7 3.7 0 0 1-1.104-.695 2.652 2.652 0 0 1-.564-.745 4.221 4.221 0 0 1-.368-1.006H9.59c-.038.12-.08.238-.13.352zm12.611-2.634c0-.118-.01-.235-.028-.353H11.11c.018.118.028.235.028.353 0 .118-.01.235-.028.353h9.933c.018-.118.028-.235.028-.353zM4.67 11.028a3.582 3.582 0 0 1 .13-.353 3.793 3.793 0 0 1 2.134-2.078 4.51 4.51 0 0 1 3.117-.016c.43.133.822.396 1.104.695.231.213.422.465.565.745a4.221 4.221 0 0 1 .368 1.006H4.67zm9.477-3.115a4.51 4.51 0 0 1 3.116.016c.43.133.822.396 1.104.695.231.213.422.465.565.745a4.221 4.221 0 0 1 .368 1.006h-7.418c.037-.118.08-.235.13-.353a3.793 3.793 0 0 1 2.135-2.078zm8.716 2.762a5.612 5.612 0 0 0-.49-1.414 4.669 4.669 0 0 0-.893-1.197c-.385-.384-.851-.685-1.367-.893a6.076 6.076 0 0 0-3.428-.164 5.58 5.58 0 0 0-1.578.607 4.835 4.835 0 0 0-1.252 1.005c-.375.397-.684.85-.913 1.342a5.612 5.612 0 0 0-.49 1.414c-.082.49-.082.988 0 1.478.053.47.183.929.387 1.366a4.669 4.669 0 0 0 .893 1.197c.385.384.851.685 1.367.893a6.076 6.076 0 0 0 3.428.164 5.58 5.58 0 0 0 1.578-.607 4.835 4.835 0 0 0 1.252-1.005c.375-.397.684-.85.913-1.342a5.612 5.612 0 0 0 .49-1.414c.082-.49.082-.988 0-1.478a5.56 5.56 0 0 0-.387-1.366zm-11.356 0a5.612 5.612 0 0 0-.49-1.414 4.669 4.669 0 0 0-.893-1.197c-.385-.384-.851-.685-1.367-.893a6.076 6.076 0 0 0-3.428-.164 5.58 5.58 0 0 0-1.578.607 4.835 4.835 0 0 0-1.252 1.005c-.375.397-.684.85-.913 1.342a5.612 5.612 0 0 0-.49 1.414c-.082.49-.082.988 0 1.478.053.47.183.929.387 1.366a4.669 4.669 0 0 0 .893 1.197c.385.384.851.685 1.367.893a6.076 6.076 0 0 0 3.428.164 5.58 5.58 0 0 0 1.578-.607 4.835 4.835 0 0 0 1.252-1.005c.375-.397.684-.85.913-1.342a5.612 5.612 0 0 0 .49-1.414c.082-.49.082-.988 0-1.478a5.56 5.56 0 0 0-.387-1.366z" fill="#2F8D46"/>
+                            </svg>
+                        </div>
+                        <h3>GeeksforGeeks</h3>
+                        <p class="achievement">💻 Active Contributor</p>
+                        <p>Practicing coding problems and contributing to the community</p>
+                        <a href="https://www.geeksforgeeks.org/user/sathviksmpw8" target="_blank" class="platform-link">Visit Profile →</a>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3C.673 21 0 20.328 0 19.5V9c0-.828.673-1.5 1.5-1.5h3zm9-4.5A1.5 1.5 0 0 1 15 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3c-.827 0-1.5-.672-1.5-1.5v-15c0-.828.673-1.5 1.5-1.5h3zm9 7.5A1.5 1.5 0 0 1 24 12v7.5a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5V12a1.5 1.5 0 0 1 1.5-1.5h3z" fill="#1F8ACB"/>
+                            </svg>
+                        </div>
+                        <h3>Codeforces</h3>
+                        <p class="achievement">📈 Problem Solver</p>
+                        <p>Competing in contests and improving algorithmic problem-solving skills</p>
+                        <a href="https://codeforces.com/profile/sathviksahithi" target="_blank" class="platform-link">Visit Profile →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">Feel free to reach out for collaborations, opportunities, or just a chat about technology!</p>
+            <div class="social-icons">
+                <a href="https://github.com/Sathvik5647" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sathvik-merugu-b7195a37b/" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/sathvik.m_1110/" target="_blank" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="mailto:sathviksahithi@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Sathvik Merugu. Built with passion for technology and exploration.</p>
+        </div>
+    </footer>
+
+    <!-- Badge Modal -->
+    <div id="badgeModal" class="modal">
+        <span class="modal-close" onclick="closeBadgeModal()">&times;</span>
+        <div class="modal-content-wrapper">
+            <img class="modal-content" id="modalBadgeImage">
+            <div class="modal-caption">
+                <h3 id="modalBadgeTitle"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <span class="modal-close" onclick="closeCertModal()">&times;</span>
+        <div class="modal-content-wrapper">
+            <img class="modal-content" id="modalCertImage">
+            <div class="modal-caption">
+                <h3 id="modalCertTitle"></h3>
+                <p id="modalCertIssuer"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
