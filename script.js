@@ -17,10 +17,26 @@ function switchTab(tabName) {
     // Add active class to clicked button
     event.target.classList.add('active');
 
+    // Close mobile menu when tab is clicked
+    if (window.innerWidth <= 768) {
+        toggleMenu();
+    }
+
     // Restart typewriter effect when switching to home
     if (tabName === 'home') {
         startTypewriter();
     }
+}
+
+// Toggle mobile menu
+function toggleMenu() {
+    const navTabs = document.getElementById('navTabs');
+    const overlay = document.getElementById('overlay');
+    const hamburger = document.querySelector('.hamburger');
+    
+    navTabs.classList.toggle('active');
+    overlay.classList.toggle('active');
+    hamburger.classList.toggle('active');
 }
 
 // Certificate Modal Functions
